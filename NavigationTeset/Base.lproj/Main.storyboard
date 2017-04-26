@@ -12,7 +12,6 @@
         <!--Books-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NavigationTeset" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
@@ -46,6 +45,7 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1160.8" y="-635.53223388305855"/>
         </scene>
@@ -224,12 +224,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FDO-hD-Cmp">
-                                <rect key="frame" x="164" y="171" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENE-az-Aif">
+                                <rect key="frame" x="164" y="195" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="완료"/>
                                 <connections>
-                                    <action selector="done:" destination="Lpv-Wb-1az" eventType="touchUpInside" id="980-gr-3is"/>
+                                    <action selector="done:" destination="Lpv-Wb-1az" eventType="touchUpInside" id="J7R-5d-ypn"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -237,7 +237,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="Red" id="Vs6-E9-ybs"/>
                     <connections>
-                        <outlet property="done" destination="FDO-hD-Cmp" id="D5o-pV-haY"/>
                         <outlet property="myTextField" destination="1fD-Ng-ahK" id="bmJ-Vy-iJQ"/>
                     </connections>
                 </viewController>
@@ -251,6 +250,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="4Ix-o8-bkn" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="gzY-SJ-hAm">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>

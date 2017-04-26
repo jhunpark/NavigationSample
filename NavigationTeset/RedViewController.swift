@@ -9,6 +9,7 @@
 import UIKit
 
 class RedViewController: UIViewController {
+    //var myFunc:((UIColor) -> ())? = nil
 
     @IBOutlet var myTextField: UITextField!
     
@@ -31,6 +32,10 @@ class RedViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func changeBackColor(_ f:(UIColor) -> ()) {
+        f(UIColor.black)
     }
     
 

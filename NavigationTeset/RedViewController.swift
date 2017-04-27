@@ -9,11 +9,16 @@
 import UIKit
 
 class RedViewController: UIViewController {
-    //var myFunc:((UIColor) -> ())? = nil
+    var myFunc:((UIColor) -> ())? = nil
 
     @IBOutlet var myTextField: UITextField!
     
     @IBAction func done(_ sender: Any) {
+        
+        if let afunc = myFunc {
+            afunc(UIColor.gray)
+        }
+        
         if let myDelegate = delegate, let myStr = myTextField.text {
             myDelegate.sendText(newText: myStr)
             self.navigationController?.popViewController(animated: true)
@@ -34,8 +39,8 @@ class RedViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func changeBackColor(_ f:(UIColor) -> ()) {
-        f(UIColor.black)
+    func changeBackColor(_ coloFunc:@escaping (UIColor) -> ()) {
+        self.myFunc = coloFunc
     }
     
 
